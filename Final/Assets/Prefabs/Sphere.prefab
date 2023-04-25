@@ -4815,8 +4815,8 @@ GameObject:
   - component: {fileID: 6012637515979125837}
   - component: {fileID: 3885488839704116616}
   - component: {fileID: 3425673932704564458}
-  - component: {fileID: 7398883209084018419}
   - component: {fileID: 1454302824168794492}
+  - component: {fileID: 2928999488409475423}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Magic
@@ -4888,19 +4888,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &7398883209084018419
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4652876352424730280}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1454302824168794492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4914,3 +4901,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 40
+--- !u!136 &2928999488409475423
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4652876352424730280}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

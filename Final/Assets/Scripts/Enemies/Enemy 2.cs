@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy2 : MonoBehaviour
 {
-    public GameObject Shield;
+      public GameObject Shield;
 
     // Start is called before the first frame update
     void Start()
@@ -18,13 +18,9 @@ public class Enemy : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision other) 
+       private void OnCollisionEnter(Collision other) 
     {
         if(other.gameObject.CompareTag("Magic"))
-        {
-            //Destroy(this.gameObject);
-        }
-        if(other.gameObject.CompareTag("Enemy 2"))
         {
             Shield.gameObject.SetActive(false);
         }
