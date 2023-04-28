@@ -6,7 +6,7 @@ TagManager:
   tags:
   - Ground
   - Magic
-  - Enemy 2
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -55,12 +55,9 @@ public class Player : MonoBehaviour
         {
             isOnground = true;
         }
-        else
+        if(other.gameObject.CompareTag("Enemy"))
         {
-            if(other.gameObject.CompareTag("Star"))
-            {
-                YouWonScrene.gameObject.SetActive(true);
-            }
+            //Destroy(this.gameObject);
         }
     }
 
