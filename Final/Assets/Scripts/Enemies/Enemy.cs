@@ -32,7 +32,7 @@ public class Enemy : MonoBehaviour
        //transform.Translate(-localposition.x * Time.deltaTime * Speed, -localposition.y * Time.deltaTime * Speed, -localposition.z * Time.deltaTime * Speed);
     }
 
-    private void OnTriggerEnter(Collider other)
+       private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Magic"))
         {

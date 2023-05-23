@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     public float RotationSpeed = 45f;
     public GameObject Bullet;
     public GameObject SpawnPos;
+    public GameManager GameManager;
 
     public float jumpForce = 10;
     public float gravityModifier;
@@ -58,6 +59,11 @@ public class Player : MonoBehaviour
         if(other.gameObject.CompareTag("Enemy"))
         {
             //Destroy(this.gameObject);
+            SceneManager.LoadScene(0);
+        }
+        if(other.gameObject.CompareTag("Artifact"))
+        {
+            YouWonScrene.gameObject.SetActive(true);
         }
     }
 
